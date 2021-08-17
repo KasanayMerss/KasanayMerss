@@ -1,0 +1,369 @@
+:root {
+	--rojo: #E50914;
+	--fondo: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+.pelicula-principal::after {
+	content: '';
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/backdrop.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 3.12em;
+	display: block;
+	align-items: end;
+}
+
+.pelicula-principal .contenedor{
+	position: absolute;
+	z-index: 1;
+	top: 10%;
+	left: 50%;
+	margin-top: 340px;
+	margin-left: -455px;
+}
+
+.pelicula-principal .contenedor {
+	
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principal .boton i {
+	margin-right: 1.25em;
+}
+
+.descripcion {
+	color: #fff;
+}
+
+.titulo {
+	color: #fff;
+}
+
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+} 
+
+.contenedor-titulo-controles .indecad0res button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indecad0res button:hover, 
+.contenedor-titulo-controles .indecad0res button.activo {
+	background: red;
+}
+
+/* ---- ----- ----- C0ntened0r Principal y Flechas ----- ----- ----- */
+
+.viedos-recomendados {
+	margin-bottom: 70px;
+}
+
+.viedos-recomendados .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.viedos-recomendados .contenedor-principal .flecha-izquierda,
+.viedos-recomendados .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0, 0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.viedos-recomendados .contenedor-principal .flecha-izquierda:hover,
+.viedos-recomendados .contenedor-principal .flecha-derecha:hover {
+	background: rgba(0,0,0, 0.9);
+}
+
+.viedos-recomendados .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.viedos-recomendados .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- carousel ----- ----- ----- */
+.viedos-recomendados .contenedor-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.viedos-recomendados .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.viedos-recomendados .contenedor-carousel .carousel .viedos {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0 .3);
+}
+
+.viedos-recomendados .contenedor-carousel .carousel .viedos.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.viedos-recomendados .contenedor-carousel .carousel .viedos img {
+	width: 100%;
+	vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---- ----- ----- Redes S0ciales ----- ----- ----- */
+.RS {
+	color: #fff;
+
+	text-align: center;
+	margin: auto;
+}
+
+.Youtube {
+	color: #c4302b;
+}
+
+.Facebook {
+	color: #3b5998;
+}
+
+.Twitter {
+	color: #00acee;
+}
+
+.Discord {
+	color: #7289da;
+}
+
+.grid-4 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 15px;
+}
+
+.c0ntenedor {
+	width: 900px;
+	margin: auto;
+	overflow: hidden;
+	padding: 2rem 2rem;
+}
+
+.title {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	font-size: 30px;
+	padding: 5rem 3rem;
+}
+
+.cambiarazul {
+	color: #AAA;
+	text-decoration: none;
+}
+
+.Space {
+	padding: 5rem;
+}
+
+/* ---- ----- ----- Ayuda y Soporte ----- ----- ----- */
+
+.c0ntened0r {
+	width: 960px;
+	margin: auto;
+	overflow: hidden;
+	padding: 5rem 3rem;
+}
+
+.text-center {
+	text-align: center;
+	margin: auto;
+}
+
+.grid-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-gap: 5px;
+}
+
+.blanc0 {
+	background: #fff;
+	color: #333;
+}
+
+.griss {
+	background: #2f3542;
+	color: #fff;
+}
+
+/* ---- ----- ----- f00ter ----- ----- ----- */
+
+.f00ter {
+	padding: 2.2rem;
+	color: #868e96;;
+	background: #212529;;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+
+	.viedos-recomendados .contenedor-carousel{
+		overflow: visible;
+	}
+
+	.viedos-recomendados .contenedor-carousel .carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.viedos-recomendados .indecad0res,
+	.viedos-recomendados .contenedor-principal .flecha-izquierda,
+	.viedos-recomendados .contenedor-principal .flecha-derecha {
+		display: none;
+	}
+}
